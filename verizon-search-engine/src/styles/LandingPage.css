@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    margin: 0.3% 0 0% 0.5%
+}
+
+.logo{
+    margin: 5% 0 -20% 0;
+    width:60%;
+    height:60px;
+}
+
+.imagesTab{
+    width:100%
+}
+.site-card-wrapper {
+    padding: 30px;
+}
+
+.searchbtn{
+    margin-left: 720px;
+    margin-top: -100px;
+    height: 55px;
+}

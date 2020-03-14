@@ -1,0 +1,41 @@
+
+    
+.all-tab, .image-tab, .contacts-tab, .hide-tab, .pinned-tab {
+  display: none;
+}
+
+.show-tab {
+  display: block !important;
+}
+
+.tab-images {
+  max-width: 3000px;
+  max-height: 250px;
+  margin-top: 5%
+}
+
+.site-card-wrapper {
+  /* background: #ececec; */
+  padding: 30px;
+  width: 100%;
+}
+
+.card-module{
+  margin-right: 45%
+}
+
+.ant-card-body {
+  padding: 20px !important;
+}
+
+.slack-content-container {
+  display: table;
+}
+
+.card-container {
+  background-color: rgb(255, 255, 255) !important;
+}
+  /* color: white; */
+.fa-icon {
+  float: right;
+}

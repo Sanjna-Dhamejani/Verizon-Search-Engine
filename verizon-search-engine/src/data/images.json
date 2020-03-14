@@ -1,0 +1,33 @@
+{
+    "images": [
+      {
+        "id": "12345",
+        "image": "https://pbs.twimg.com/media/DBQTMGoUwAMNZe3.jpg",
+        "created": "12-3-2018",
+        "description": "Yahoo campus",
+        "matching_terms": ["yahoo", "sheldon", "cooper"]
+      },
+
+      {
+        "id": "12347",
+        "image": "https://josephinterpretingmedia.files.wordpress.com/2016/05/120726-google-campus-ft.jpg?w=1200",
+        "created": "12-21-2018",
+        "description": "Yahoo campus",
+        "matching_terms": ["yahoo", "sheldon", "cooper"]
+      },
+      {
+        "id": "12348",
+        "image": "http://static4.businessinsider.com/image/524d95aceab8ea8b3102bf5a-1200/this-is-perhaps-the-most-famous-familiar-view-of-the-google-campus-the-outdoor-cafeteria-with-colorful-umbrellas-primary-colors-are-everywhere-on-campus-giving-it-a-preschool-feel.jpg",
+        "created": "1-14-2019",
+        "description": "Yahoo campus",
+        "matching_terms": ["yahoo", "erica"]
+      },
+      {
+        "id": "12349",
+        "image": "https://img-www.tf-cdn.com/show/2/silicon-valley.jpeg?_v=20181109180656&w=1024&h=512&dpr=1&auto=compress&fm=pjpg&fit=crop&crop=faces%2Ctop",
+        "created": "2-1-2019",
+        "description": "Yahoo campus",
+        "matching_terms": ["yahoo"]
+      }
+    ]
+}
