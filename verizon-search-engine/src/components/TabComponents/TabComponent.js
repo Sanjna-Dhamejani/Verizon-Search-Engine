@@ -17,7 +17,6 @@ class TabComponent extends Component {
             isAllTabActive: true,
             isImageTabActive: false,
             isContactsTabActive: false,
-            isPinnedTabActive: false
         }
 
     }
@@ -29,7 +28,6 @@ class TabComponent extends Component {
             isAllTabActive: false,
             isImageTabActive: false,
             isContactsTabActive: false,
-            isPinnedTabActive: false
         });
     }
 
@@ -39,7 +37,6 @@ class TabComponent extends Component {
                 isAllTabActive : true,
                 isImageTabActive : false,
                 isContactsTabActive : false,
-                isPinnedTabActive: false
             });
         }
         if(key==='2'){
@@ -47,7 +44,6 @@ class TabComponent extends Component {
                 isAllTabActive : false,
                 isImageTabActive : true,
                 isContactsTabActive : false,
-                isPinnedTabActive: false
             });
         }
         if(key==='3'){
@@ -55,15 +51,6 @@ class TabComponent extends Component {
                 isAllTabActive : false,
                 isImageTabActive : false,
                 isContactsTabActive : true,
-                isPinnedTabActive: false
-            });
-        }
-        if(key==='4'){
-            this.setState({
-                isAllTabActive : false,
-                isImageTabActive : false,
-                isContactsTabActive : false,
-                isPinnedTabActive: true
             });
         }
     }
@@ -79,8 +66,6 @@ class TabComponent extends Component {
                                 <TabPane tab="Images" key="2">
                                 </TabPane>
                                 <TabPane tab="Contacts" key="3">
-                                </TabPane>
-                                <TabPane tab="Pinned" key="4">
                                 </TabPane>
                             </Tabs>
                     </div>
