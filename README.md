@@ -13,7 +13,7 @@ The search Results are not displayed as soon as every character is typed. lodash
 
 ### Some future enhancements:
 
-#### Implementing Webhooks for better updation of dynamic data ffrom Twitter/Slacks.
+#### Implementing Webhooks for better updation of dynamic data from Twitter/Slacks.
 #### For ordering the search results according to relevancy, a click counter would be maintained. Once if a person clicks on a link, that click counter will be increased and the link with maximum click counter will be displayed on top and so on.
 
 ### Screenshots
