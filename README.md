@@ -8,7 +8,9 @@ The reading of data and manipulation of the matching_terms set is done in a sepa
 
 A setInterval function is used to pull the data every few seconds so as to get the most updated data. 
 
-Some future enhancements:
+The search Results are not displayed as soon as every character is typed. lodash can be used for that. But it is not used in project because it brings data from all sources and it is not even needed. Instead suggestions from matching_terms is displayed instead of the whole data source.
 
-## Implementing Webhooks for better updation of dynamic data ffrom Twitter/Slacks.
-## For displaying the search results according to relevancy, a click counter would be maintained. Once if a person clicks on a link, that click counter will be increased and the link with maximum click counter will be displayed on top and so on.
+####Some future enhancements:
+
+#### Implementing Webhooks for better updation of dynamic data ffrom Twitter/Slacks.
+#### For ordering the search results according to relevancy, a click counter would be maintained. Once if a person clicks on a link, that click counter will be increased and the link with maximum click counter will be displayed on top and so on.
