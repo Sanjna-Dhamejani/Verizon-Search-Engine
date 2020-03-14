@@ -24,6 +24,16 @@
   margin-right: 45%
 }
 
+.alert-warning {
+  color: #8580a0;
+  background-color: #e8e7e4;
+  border-color: #ffffff;
+}
+
+.mgtp{
+  margin-top: 5%
+}
+
 .ant-card-body {
   padding: 20px !important;
 }

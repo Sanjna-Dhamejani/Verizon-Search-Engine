@@ -102,7 +102,7 @@ class TabComponent extends Component {
                         </div>
                     </div>
                     <div className={this.props.isNoResults ? "show-tab" : "hide-tab"}>
-                        <h3>No matching results</h3>
+                        <h3 className="mgtp">No matching results</h3>
                     </div>
                 </div>
             </div>
