@@ -3,6 +3,9 @@ import { Card, Col, Row } from 'antd';
 import PinnedTabComponent from './PinnedTabComponent'
 import { Link } from 'react-router-dom';
 
+//Component displaying Tweets and Slacks containing the matching_terms
+
+//TO DO Alter display results according to dismissedItems array
 
 class AllTabComponent extends Component {
     constructor(props) {
@@ -17,6 +20,7 @@ class AllTabComponent extends Component {
         this.dismissSlack = this.dismissSlack.bind(this);
     }
 
+    //Adding tweets and slacks to pinnedItems array so tas to show them in a separate tab.
 
     pinTweet = (event) => {
         const target = event.target;
@@ -37,6 +41,9 @@ class AllTabComponent extends Component {
             })
         }
     }
+
+    //Adding tweets and slacks to dismissedItems array so tas to alter display results.
+
 
     dismissTweet = (event) => {
         const target = event.target;
@@ -59,6 +66,7 @@ class AllTabComponent extends Component {
         }
     }
 
+    //Mapping for Tweet results
 
     render() {
         let tweetList = this.props.tweetresultSet.map((tweet, index) => {
@@ -78,6 +86,8 @@ class AllTabComponent extends Component {
             )
 
         });
+
+        //Maping for slacks Results
 
         let slacksList = this.props.slackresultSet.map((slack, index) => {
             return (

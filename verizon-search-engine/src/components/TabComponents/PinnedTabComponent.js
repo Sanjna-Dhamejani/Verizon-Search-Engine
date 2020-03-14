@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Card, Col } from 'antd';
+//Displaying Pinned Items in this component.
 
 class PinnedTabComponent extends Component {
     constructor(props) {
         super(props);
     }
-    
+
     render() {
         let pinnedList = [];
         if(this.props.pinnedresultSet)

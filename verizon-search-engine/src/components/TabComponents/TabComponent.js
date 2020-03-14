@@ -6,6 +6,8 @@ import PinnedTabComponent from './PinnedTabComponent'
 import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 
+//This is the component which acts as a parent to all mini sub modules like images, contacts, etc
+
 class TabComponent extends Component {
 
     constructor(props) {
@@ -20,6 +22,7 @@ class TabComponent extends Component {
 
     }
 
+//handlers to toggle views between different tabs.
 
     handleNoSearchResults = () => {
         this.setState({

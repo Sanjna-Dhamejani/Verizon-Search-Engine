@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Card, Col } from 'antd';
 
+//This component displays contact cards based on the searched matching_terms
+
 class ContactsTabComponent extends Component {
     constructor(props) {
         super(props);
@@ -19,11 +21,9 @@ class ContactsTabComponent extends Component {
                         </Card>
                         <br></br>
                     </Col>     
-                                    
-                
             )
-            
         });
+        
         return (
             <div>
             <div>

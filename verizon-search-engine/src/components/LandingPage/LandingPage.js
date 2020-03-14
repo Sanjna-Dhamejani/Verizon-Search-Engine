@@ -10,8 +10,12 @@ import logo from '../../images/VerizonMediaLogo.png'
 import { Col, Row } from 'antd'
 import 'antd/dist/antd.css'
 import TabComponent from '../TabComponents/TabComponent';
-import { getData, getContact, getImages, getTweets, getSlacks } from '../../service';
+// To get data from the service.js which kind of acts like backend. This is done so that the frontend shouldnt become heavy
+import { getData, getContact, getImages, getTweets, getSlacks } from '../../service'; 
 
+// Landing Page
+
+//Initialising global variables to store 
 var contactDetails = [];
 var imageDetails = [];
 var slackDetails = [];
@@ -47,7 +51,7 @@ class LandingPage extends Component {
         this.search = this.search.bind(this);
     }
 
- 
+ //This search is an onchange function and is triggered when something is selected from the dropdown on type into the search bar
 
     search = (event, value) => {
 
@@ -55,8 +59,11 @@ class LandingPage extends Component {
         tweetDetails = [];
         slackDetails = [];
         imageDetails = [];
+
+        //This is done to get the exact value from the search bar and then it is checked against the data set.
         if(!value) value = this.textBox.getElementsByTagName('input')[0]['value'];
         
+        //This is done for the validation that if the input isnt present in our database, it will show No matching items.
         if(!match_items.has(value))
         {
             this.setState({
@@ -65,6 +72,7 @@ class LandingPage extends Component {
             
         }
         else {
+            //Pulling all the data which matches the searched matching_term                                                                                          
             let tempvalue = value
             if (tempvalue) {
                 getContact().contacts.forEach(function (obj) {
@@ -89,6 +97,9 @@ class LandingPage extends Component {
                 });
 
             }
+
+            //Creating a map structure to push it to the child component
+
             this.setState(state => {
                 state.resultSet.contactsresultSet = contactDetails
                 state.resultSet.tweetresultSet = tweetDetails
@@ -131,7 +142,8 @@ class LandingPage extends Component {
                         </Col>
                     </Row>
                 </div>
-
+                
+                {/* Sending props to child component */}
                 <TabComponent props={this.state.resultSet} tweetresultSet={this.state.resultSet.tweetresultSet}
                     imageresultSet={this.state.resultSet.imageresultSet}
                     slackresultSet={this.state.resultSet.slackresultSet}

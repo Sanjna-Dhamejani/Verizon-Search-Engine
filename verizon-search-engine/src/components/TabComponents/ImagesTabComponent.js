@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+//Component displays imageResults in a grid view.
+
+//TO DO : Implement a modal on each image so that it can open and zoom in
+
 class ImageTabComponent extends Component {
     constructor(props) {
         super(props);

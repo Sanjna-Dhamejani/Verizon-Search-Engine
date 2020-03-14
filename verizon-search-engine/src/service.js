@@ -1,3 +1,8 @@
+//To handle fetching of data dynamically. 
+//This is a basic way to keey checking every 100 seconfs whether if any new data is added. 
+//If yes then the set will be updated.
+
+//A better way is to use webhooks and keep fetching the dynamic data
 function readData(){
     setInterval(function() {
         getContact();
@@ -6,6 +11,8 @@ function readData(){
         getSlacks();
     }, 100);  
 }
+
+//Creating set after iterating through each JSON entry
 
 export function getData(){
     var match_items = new Set();
